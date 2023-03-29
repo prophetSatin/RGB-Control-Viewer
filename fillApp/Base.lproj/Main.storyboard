@@ -37,20 +37,6 @@
                                     <action selector="sliderRedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="k27-Y1-TY2"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHP-pF-zKc">
-                                <rect key="frame" x="8" y="378" width="42" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtV-9Q-eq9">
-                                <rect key="frame" x="8" y="278" width="42" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71Q-o3-78C">
                                 <rect key="frame" x="62" y="478" width="50" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
@@ -79,13 +65,21 @@
                                     <constraint firstAttribute="height" constant="128" id="nFC-1W-rBf"/>
                                 </constraints>
                             </sceneKitView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyU-g1-h2Y">
-                                <rect key="frame" x="8" y="478" width="42" height="18"/>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-aa-r6v">
+                                <rect key="frame" x="8" y="267" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.92128556966781616" green="0.2323548510334478" blue="0.10842071940992133" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </sceneKitView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPk-UJ-pzg">
+                                <rect key="frame" x="8" y="367" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38123533425026496" green="0.86078917980194092" blue="0.11672667955617232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </sceneKitView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-xH-KLr">
+                                <rect key="frame" x="8" y="467" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20431694872526412" green="0.18454916705199742" blue="0.86078917980194092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </sceneKitView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -95,10 +89,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueCircle" destination="jjS-xH-KLr" id="pjU-Ar-PU2"/>
+                        <outlet property="greenCircle" destination="uPk-UJ-pzg" id="mHI-aO-nmM"/>
                         <outlet property="labelSliderBlue" destination="71Q-o3-78C" id="msa-CP-1qF"/>
                         <outlet property="labelSliderGreen" destination="n4k-z5-xQV" id="wEq-Yo-fNe"/>
                         <outlet property="labelSliderRed" destination="KRG-8b-t39" id="ZoO-pt-H9C"/>
                         <outlet property="object" destination="LPn-vs-phb" id="uV8-ob-O3J"/>
+                        <outlet property="redCircle" destination="ZNO-aa-r6v" id="YyT-Bj-opx"/>
                         <outlet property="sliderBlue" destination="X3c-ec-TNU" id="anQ-Hq-Vod"/>
                         <outlet property="sliderGreen" destination="Eam-ak-9rc" id="jdP-pX-HPC"/>
                         <outlet property="sliderRed" destination="tTX-6m-qQa" id="m1l-RB-4dr"/>

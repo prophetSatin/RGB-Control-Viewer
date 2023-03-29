@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet var labelSliderGreen: UILabel!
     @IBOutlet var labelSliderBlue: UILabel!
     
+    @IBOutlet var redCircle: SCNView!
+    @IBOutlet var greenCircle: SCNView!
+    @IBOutlet var blueCircle: SCNView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,18 +30,24 @@ class ViewController: UIViewController {
         sliderRed.minimumValue = 0
         sliderRed.maximumValue = 255
         sliderRed.value = 0
+        sliderRed.minimumTrackTintColor = .red
         
         //MARK: sliderGreen
         sliderGreen.minimumValue = 0
         sliderGreen.maximumValue = 255
         sliderGreen.value = 0
+        sliderGreen.minimumTrackTintColor = .green
         
         //MARK: sliderBlue
         sliderBlue.minimumValue = 0
         sliderBlue.maximumValue = 255
         sliderBlue.value = 0
+        sliderBlue.minimumTrackTintColor = .blue
         
-        
+        //MARK: Circles
+        redCircle.layer.cornerRadius = 15
+        greenCircle.layer.cornerRadius = 15
+        blueCircle.layer.cornerRadius = 15
         
     }
     
