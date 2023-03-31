@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8754510D29D49E0900651472 /* fillApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fillApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8754510D29D49E0900651472 /* RGB Color Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RGB Color Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8754511029D49E0900651472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8754511229D49E0900651472 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8754511429D49E0900651472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		8754510429D49E0900651472 = {
 			isa = PBXGroup;
 			children = (
-				8754510F29D49E0900651472 /* fillApp */,
+				8754510F29D49E0900651472 /* RGB Color Viewer */,
 				8754510E29D49E0900651472 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		8754510E29D49E0900651472 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8754510D29D49E0900651472 /* fillApp.app */,
+				8754510D29D49E0900651472 /* RGB Color Viewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8754510F29D49E0900651472 /* fillApp */ = {
+		8754510F29D49E0900651472 /* RGB Color Viewer */ = {
 			isa = PBXGroup;
 			children = (
 				8754511029D49E0900651472 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				8754511B29D49E0A00651472 /* LaunchScreen.storyboard */,
 				8754511E29D49E0A00651472 /* Info.plist */,
 			);
-			path = fillApp;
+			path = "RGB Color Viewer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8754510C29D49E0900651472 /* fillApp */ = {
+		8754510C29D49E0900651472 /* RGB Color Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8754512129D49E0A00651472 /* Build configuration list for PBXNativeTarget "fillApp" */;
+			buildConfigurationList = 8754512129D49E0A00651472 /* Build configuration list for PBXNativeTarget "RGB Color Viewer" */;
 			buildPhases = (
 				8754510929D49E0900651472 /* Sources */,
 				8754510A29D49E0900651472 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = fillApp;
+			name = "RGB Color Viewer";
 			productName = fillApp;
-			productReference = 8754510D29D49E0900651472 /* fillApp.app */;
+			productReference = 8754510D29D49E0900651472 /* RGB Color Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8754510829D49E0900651472 /* Build configuration list for PBXProject "fillApp" */;
+			buildConfigurationList = 8754510829D49E0900651472 /* Build configuration list for PBXProject "RGB Color Viewer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8754510C29D49E0900651472 /* fillApp */,
+				8754510C29D49E0900651472 /* RGB Color Viewer */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP582B2GU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fillApp/Info.plist;
+				INFOPLIST_FILE = "RGB Color Viewer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP582B2GU2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fillApp/Info.plist;
+				INFOPLIST_FILE = "RGB Color Viewer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8754510829D49E0900651472 /* Build configuration list for PBXProject "fillApp" */ = {
+		8754510829D49E0900651472 /* Build configuration list for PBXProject "RGB Color Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8754511F29D49E0A00651472 /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8754512129D49E0A00651472 /* Build configuration list for PBXNativeTarget "fillApp" */ = {
+		8754512129D49E0A00651472 /* Build configuration list for PBXNativeTarget "RGB Color Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8754512229D49E0A00651472 /* Debug */,

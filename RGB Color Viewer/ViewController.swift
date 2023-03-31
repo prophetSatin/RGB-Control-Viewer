@@ -15,15 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet var labelSliderGreen: UILabel!
     @IBOutlet var labelSliderBlue: UILabel!
     
-    @IBOutlet var redCircle: SCNView!
-    @IBOutlet var greenCircle: SCNView!
-    @IBOutlet var blueCircle: SCNView!
-    
+   
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //MARK: object
+        object.layer.cornerRadius = 15
         object.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)
         
         //MARK: sliderRed
@@ -43,32 +42,18 @@ class ViewController: UIViewController {
         sliderBlue.maximumValue = 255
         sliderBlue.value = 0
         sliderBlue.minimumTrackTintColor = .blue
-        
-        //MARK: Circles
-        redCircle.layer.cornerRadius = 15
-        greenCircle.layer.cornerRadius = 15
-        blueCircle.layer.cornerRadius = 15
-        
     }
     
-    func colorChanger() {
+    private func colorChanger() {
         let redValue: Float = sliderRed.value
         let greenValue: Float = sliderGreen.value
         let blueValue: Float = sliderBlue.value
         
         object.backgroundColor = UIColor(red: CGFloat(redValue)/255, green: CGFloat(greenValue)/255, blue: CGFloat(blueValue)/255, alpha: 1)
     }
-    @IBAction func sliderRedAction(_ sender: Any) {
+    @IBAction private func sliderRedAction(_ sender: Any) {
         labelSliderRed.text = String(Int(sliderRed.value))
-        colorChanger()
-        
-    }
-    @IBAction func sliderGreenAction(_ sender: Any) {
         labelSliderGreen.text = String(Int(sliderGreen.value))
-        colorChanger()
-    }
-
-    @IBAction func sliderBlueAction(_ sender: Any) {
         labelSliderBlue.text = String(Int(sliderBlue.value))
         colorChanger()
     }
